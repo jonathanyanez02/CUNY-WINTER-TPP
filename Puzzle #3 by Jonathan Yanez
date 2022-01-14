@@ -1,0 +1,36 @@
+//Create a function that takes a number as a parameter. This function will print out (console.log()) every number from 1 to the number passed as the parameter, now:
+//if the number is divisible by 3 then the function will print out the word 'Fizz' instead of the number.
+//if the number is divisible by 3 and 5 then the function will print out the word 'Fizz Buzz' instead of the number.
+
+//Previous code was not running and ran into many bugs
+
+
+
+<script>
+ 
+
+for ( var x = 1; x < 101; x++ ) {
+  
+  
+  var checkForThree = x % 3;// checks if its divisable by 3
+  var checkForFive = x % 5;// checks if its divisable by 5
+  
+  // if the number is divisible by both 3 and 5, then print FizzBuzz
+  if ( (checkForThree == 0) && (checkForFive == 0) ) 
+  	console.log( "FizzBuzz");
+  
+  // if the number is divisible by 3, then print Fizz
+  else if (checkForThree == 0)
+    console.log( "Fizz");
+  
+  // if the number is divisible by 5, then print Buzz
+  else if (checkForFive == 0)
+    console.log( "Buzz");
+  
+  // otherwise just print the number
+  else
+    console.log( x );
+} 
+</script>
+
+//credits to @mojenmojen for the code 
