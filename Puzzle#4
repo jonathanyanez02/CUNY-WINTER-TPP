@@ -1,0 +1,9 @@
+//Jonathan Yanez
+
+//PsuedoCode
+
+
+//Checks for ransomNote, if null or empty then return true since null or empty can then be constructed from magazine
+//if magazine is null or empty then return false since then ransomNote can not be constructed from null or empty
+//since each letter in magazine can only be used only once, so if it exists in ransomNote but not in magazine as would be the case if the decremented freq value goes below 0, then return false; else return true at the end of the for loop.
+////if the program has not returned false then ransomNote can be generated using the letters in the magazine, used without repetition.
